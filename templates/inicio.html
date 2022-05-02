@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+  <title>amazon principal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
+</head>
+
+<body>
+  <!-- CABECERA -->
+  <header class="header">
+    <div class="header__container">
+      <div class="container">
+        <div class="logo">
+					<img src="{{ url_for('static', filename='IMAGE/logo1.png') }}" class="logo" width="100" />
+        </div>
+			  <form action="#">
+			<input type="search" class="buscarInput " name="buscarInput" id="buscarInput" value=""
+			placeholder="¿Que estas buscando?">
+		</form>
+		
+		<div class="logo-carrito">
+			<img src="{{ url_for('static', filename='IMAGE/cart.jpeg') }}" class="logo" width="60" />
+        </div>
+		
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- PANTALLA PRINCIPAL -->
+
+  <div class="hero">
+    <div class="hero__texts">
+      <h2 class="font-bold">¡BIENVENIDO A AMAZON!</h2>
+      <h3 class="font-bold text-xl">Donde todos precios son mas baratos</h3>
+
+      
+    </div>
+
+
+    <!-- IMAGEN  -->
+    <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark relative" data-bs-ride="carousel">
+
+      <div class="carousel-inner  relative w-full overflow-hidden">
+        <!-- PRIMERA IMAGEN -->
+        <div class="carousel-item active relative float-left w-full">
+          <img src="{{ url_for('static', filename='IMAGE/fondo_inicio.jpg') }}" class="block w-full hero__img" alt="ilustración" />
+          </div>
+        </div>
+    </div>
+  </div>
+
+<!-- BARRA DE ABAJO  -->
+  <div class="barra">
+    <div class="icono icono1">
+      <p>+20,000 Artículo <br>
+        Descubre los más vendidos</p>
+    </div>
+    <div class="icono icono2">
+      <p> Compras online rapidas <br>
+    </div>
+    <div class="icono icono3">
+      <p>Busca lo que necesites <br>
+        Todo lo encotraras aquí</p>
+    </div>
+  </div>
+
+  <!-- ACERCA DE  -->
+
+  <h1 class="font-bold text-3xl">ACERCA DE NOSTROS</h1>
+  <div id="listaCursos" class="cards__contenedor">
+    <!-- Cursos -->
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <hr>
+    <div class="footer__container">
+      <div class="footer__primer--columna">
+        <nav class="menu">
+          <a class="enlace" href="#">Categorías más vistas</a>
+          <a class="enlace" href="#">Marcas populares</a>
+          <a class="enlace" href="#">Productos destacados</a>
+        </nav>
+      </div>
+      <div class="footer__segunda--columna">
+        <nav class="menu">
+          <a class="enlace" href="#">¿Quienes Somos?</a>
+          <a class="enlace" href="#">Ayuda</a>
+          <a class="enlace" href="#">Términos y condiciones</a>
+        </nav>
+      </div>
+      <div class="footer__tercera--columna">
+        <nav class="menu">
+          <a class="enlace" href="#">Contacto</a>
+          <a class="enlace" href="#">Siguemos en redes sociales</a>
+          <a class="enlace" href="#">Atencion telefonica 956236565656</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
